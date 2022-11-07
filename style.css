@@ -2,26 +2,34 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .divcito{
-    width: 400px;
-    height: auto;
-    margin: auto;
-    margin-top: 200px;
-    border: 3px solid black;
-    box-shadow: 5px 5px 1px black;
+    background-color: rgb(180, 180, 180);
     padding: 20px;
-    background-color: rgb(206, 206, 206);
-}
-
-.in{
-    width: 100px;
-}
-.in2{
-    width: 250px;
-}
-.pecito{
-
-    width: 100px;
-    height: 20px;
+    width: 600px;
+    height: 400px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
+    border: 3px solid black;
+}
+form{
+    width: 250px;
+    margin: auto;
+    margin-top: 50px;
+}
+.est1{
+    padding: 20px;
+    width: 350px;
+    margin: auto;
+    margin-top: 50px;
+    transition: all 1s;
+}
+
+.in:hover{
+    background: rebeccapurple;
+}
+.in2:hover{
+    background: rebeccapurple;
+}
+p::selection{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
