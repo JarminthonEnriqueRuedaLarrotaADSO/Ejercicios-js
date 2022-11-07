@@ -5,23 +5,14 @@ let formulario = document.querySelector("#formulario")
 formulario.addEventListener('submit', (e) =>{
     e.preventDefault();
 let datos = Object.fromEntries(new FormData(e.target))
-let acumulador = 0
-let numero = datos.numero
-for (let i = 1; i <= numero/2; i++) {
-    if (numero % i == 0) {
-        acumulador += i
-    }
-    if (acumulador == numero) {
-        perfecto.innerHTML = `El numero "${numero}" es un numero perfecto`
-    }
-    else{
-        perfecto.innerHTML = `El numero "${numero}" no es un numero perfecto`
-    }
-
-}
-
-
-
+let venta1 = datos.venta1
+let venta2 = datos.venta2
+let venta3 = datos.venta3
+let sueldoBase = datos.sueldoBase
+let oper = (venta1+venta2+venta3)
+let operacion = oper*0.10
+let operacion1 = operacion+sueldoBase
+sueldo.innerHTML = `Su comision por las ventas es de ${operacion}`
+sueldo1.innerHTML = `Su sueldo base mas sus comisiones es de ${operacion1}`
 })
-
 })

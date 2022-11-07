@@ -15,21 +15,23 @@ form{
     margin: auto;
     margin-top: 50px;
 }
-.est1{
-    padding: 20px;
-    width: 350px;
+.p{
+    font-size: 15px;
+    width: 400px;
     margin: auto;
-    margin-top: 50px;
-    transition: all 1s;
+    margin-top: 70px;
 }
 
-.in:hover{
-    background: rebeccapurple;
-}
-.in2:hover{
-    background: rebeccapurple;
-}
+
+
 p::selection{
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
+}
+.in{
+    position:relative;
+    top: 50px;
+    left: 40px;
+    width: 100px;
+    height: 20px;
 }
